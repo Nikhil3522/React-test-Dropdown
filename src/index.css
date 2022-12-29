@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(69, 201, 201);
+    
+}
+.App{
+    background-color: rgb(118, 118, 118);
+    width: 310px;
+    height: 150px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2{
+    color: white
+}
+
+.drop{
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.main-div{
+    width: 250px;
+    height: 25px;
+    padding-top: 5px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.dropdown a{
+    /* display: block; */
+    background-color: whitesmoke;
+    margin-top: 1px;
+    border-radius: 4px;
+    width: 225px;
+    margin-left: 12.5px
+}
+
+.dropdown a:hover{
+    /* display: block; */
+    background-color: rgb(160, 160, 160);
+    cursor: pointer;
+}
