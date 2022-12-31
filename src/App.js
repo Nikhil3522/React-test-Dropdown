@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 
 function App() {
+  // This is the array, every element of this array is a option of our drop down list.
   const arr = ['Yes', 'Probably not'];
+
+  // This state is storing the option selected by user.
   const [dropSelect, setDropSelect] = useState(null);
   const [styleItem, setStyleItem] = useState(false);
 
+  // This function change the styleItem value to true.
   const showItem = () => {
     setStyleItem(true);
   }
 
   useEffect(() => {
-    console.log(dropSelect);
     if(dropSelect){
       setStyleItem(false);
     }
@@ -19,12 +22,6 @@ function App() {
   return (
     <div className="App">
       <h2>Should you use a dropdown?</h2>
-       {/* <select className="drop">
-        <option hidden defaultValue>Select</option>
-        {arr.map((item, i)=> (
-            <option key={i}>{item}</option>
-        ))}
-      </select> */}
       <div className="main-div" 
         onMouseOver={showItem} 
         // onMouseOut={() => styleItem ? (setTimeout(() => {setStyleItem(false)}, 3000) ) : null}
